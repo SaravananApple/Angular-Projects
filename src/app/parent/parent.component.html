@@ -1,0 +1,4 @@
+<h1>This is parent </h1>
+<button (click)="incrementCount()">incrementCount</button>
+<button (click)="decrementCount()">decrementCount</button>
+<app-child [count]="counter" (id)="getId($event)"></app-child>

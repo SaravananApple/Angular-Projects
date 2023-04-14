@@ -1,0 +1,26 @@
+img{
+    width: 190px;
+}
+button{
+   
+   margin-top: 20px;
+    width: 170px;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 40px;
+ 
+}
+h1{
+   float: left;
+}
+.card{
+    padding-top: 20px;
+    float: left;
+    margin-top: 40px;
+    padding-left: 80px;
+    height: 400px;
+    background-color: azure;
+    
+}
+
+

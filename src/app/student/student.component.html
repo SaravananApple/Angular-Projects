@@ -1,0 +1,54 @@
+<table class="container">
+<thead>
+<th>Id</th>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Class</th>
+<th>Age</th>
+<th>marks</th>
+<th>percentage</th>
+<th>Date</th>
+</thead>
+
+<!-- <tr *ngFor="let data of stuData">
+    <td >{{data.Id}}</td>
+    <td >{{data.FirstName}}</td>
+    <td>{{data.LastName}}</td>
+    <td>{{data.Class}}</td>
+    <td>{{data.Age}}</td>
+    <td>{{data.marks}}</td>
+    <td>{{data.percentage}}</td>
+</tr> -->
+
+<!-- Assignment -->
+<!-- <tr *ngFor="let data of stuData">
+    <td >{{data.Id}}</td>
+    <td >{{data.FirstName | lowercase}}</td>
+    <td>{{data.LastName | uppercase}}</td>
+    <td>{{data.Class}}</td>
+    <td>{{data.Age}}</td>
+    <td [ngClass]="{'marksRed': data.marks < 40, 'marksOrange': data.marks > 40 && data.marks < 60, 'marksYellow': data.marks > 60 && data.marks < 75, 'marksGreen':data.marks > 80}">{{data.marks}}</td>
+    <td>{{data.percentage | percent:'2.2'}}</td>
+    <td>{{data.updated | date:'fullDate'}}</td>
+</tr> -->
+
+<tr *ngFor="let data of stuData">
+    <td >{{data.Id}}</td>
+    <td >{{data.FirstName}}</td>
+    <td>{{data.LastName}}</td>
+    <td>{{data.Class}}</td>
+    <td>{{data.Age}}</td>
+    <td>{{data.marks}}</td>
+    <td>{{data.percentage}}</td>
+    <td>{{data.updated}}</td>
+    <td><a [routerLink]="['/userDtls',data.Id]" >View Details</a></td>
+</tr>
+
+
+
+
+
+
+</table>
+
+

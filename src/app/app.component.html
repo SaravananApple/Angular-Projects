@@ -1,0 +1,30 @@
+<h1>Angular</h1>
+<ul>
+    <li>
+        <a routerLink="user-details" routerLinkActive="selec">User List</a>
+      
+    </li>
+    <li>
+        <a routerLink="add-User" routerLinkActive="selec">Add User</a>
+      
+    </li>
+    <li>
+        <a [routerLink]="['/student','fdgfdg']" routerLinkActive="selec">Student Page</a>
+    </li>
+    <li>
+        <a [routerLink]="['/Contact']" routerLinkActive="selec">Contact Us</a>
+    </li>
+    <li>
+        <a [routerLink]="['/add-product']" routerLinkActive="selec">Add Product</a>
+    </li>
+    <li>
+        <a [routerLink]="['/product-list']" routerLinkActive="selec">Product List</a>
+    </li>
+    <li>
+        <a [routerLink]="['/edit-product','id']" routerLinkActive="selec">Edit-Product</a>
+    </li>
+    <li>
+        <a (click)="signOut()">Sign Out</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>

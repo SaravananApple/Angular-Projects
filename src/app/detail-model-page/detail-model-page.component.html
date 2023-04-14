@@ -1,0 +1,35 @@
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+ <div class="col-lg-4 col-md-4 col-12 card"  *ngFor="let p of product">
+    <h1>{{p.head}}</h1>
+  <img src="{{p.imageOfItems}}" alt="">
+ <label>MODEL ID:{{p.modelId}}</label>
+ <label >MODEL PRICE:{{p.price}}</label>
+
+  <button type="submit" >{{p.viewBtn}}</button>
+ </div>
+
+ <div class="tnk-card ">
+  <h3 class="alert alert-danger text-center">CAUTION ABOUT RETURN POLICY</h3>
+  <h6 >A Refund & Return Policy, also known as a Return & Cancellation and Refund Policy, informs buyers of your terms when they are unsatisfied with the goods or services they've purchased from you.
+
+    This often applies to material items like clothing or electronics. Digital goods, like streaming music or apps, may not always have a Return & Refund Policy.</h6>
+<h6>Return & Refund Policies are fairly simple documents. Generally, they contain following elements:
+
+    Costs of a return or refund, for example, the customer must pay return shipping.
+    Time frame to return the product.
+    Form of refund, e.g. store credit or return of purchase price.
+    This applies mainly to material goods. Digital goods are different. Many retailers may not allow their return or may only accept them on a case-by-case basis.
+    
+    These terms are often presented on a separate web page or included in the Terms & Conditions, Terms of Use or Terms of Service (referred to collectively as "T&C").
+    
+    Most online retailers use both the Terms & Conditions and a Return & Refund Policy in order to assure clarity of all terms.
+    
+    thredUP is an online retailer for second hand clothing. It accepts items for consignment from its customers as well as a full inventory of used clothing items.
+    
+    Its Return & Refund Policy is easily located and noticeable through its Terms & Conditions page and a FAQ. This is how the Return and Refund Policy is presented in the Terms agreement:</h6> 
+
+</div>
+  <router-outlet></router-outlet>

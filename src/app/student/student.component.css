@@ -1,0 +1,22 @@
+table,th,tr,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 1px;
+    border-radius: 1px;
+}
+
+.marksRed{
+    background-color: red;
+}
+.marksOrange{
+
+    background-color: orange;
+}
+.marksYellow{
+ 
+    background-color: yellow;
+}
+.marksGreen{
+
+    background-color: green;
+}

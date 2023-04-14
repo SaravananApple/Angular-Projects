@@ -1,0 +1,41 @@
+<h1>Edit Product</h1>
+
+<form [formGroup]="productForm" (ngSubmit)="addProduct()" >
+    <div>
+        <label>Product Name:</label>
+        <input type="text" name="prodName" formControlName="productName">
+        <p *ngIf="!productForm.controls.productName?.valid && (productForm.controls.productName?.dirty || productForm.controls.productName?.touched)">Please enter valid data</p>
+    </div>
+
+    <div>
+        <label>Price:</label>
+        <input type="text" name="price" formControlName="price">
+    </div>
+
+    <div>
+        <label>Quantity:</label>
+        <input type="text" name="qnty" formControlName="quantityAval">
+    </div>
+
+    <div>
+        <label>Available Sizes:</label>
+        <select formControlName="sizes">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Discount:</label>
+        <input type="text" name="dis" formControlName="discount">
+    </div>
+
+<div>
+    <button type="submit" [disabled]="!productForm.valid">Update Product</button>
+</div>
+
+
+
+</form>

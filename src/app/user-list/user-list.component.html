@@ -1,0 +1,45 @@
+<table>
+
+    <thead>
+        <th>Designer</th>
+        <th>PickTime</th>
+        <th>CompletedTime</th>
+        <th>Staus</th>
+
+    </thead>
+
+    <tr *ngFor="let user of workStaus">
+        <td [ngClass]="{heading:user.designer == 'Saravanan'}">{{user.designer}}</td>
+        <td>{{user.pickTime}}</td>
+        <td>{{user.completedTime}}</td>
+        <td  [ngStyle]="{'color':user.staus == 'WIP'? 'blue':'pink'}">{{user.staus}}</td>
+    </tr>
+
+</table>
+<p>
+    <button (click)="redirec()">Go to student page</button>
+</p>
+
+<br>
+
+<table>
+    <th>id</th>
+    <th>name</th>
+    <th>email</th>
+    <th>gender</th>
+    <th>status</th>
+
+    <tr *ngFor="let back of userListBack">
+        <td>{{back.id}}</td>
+        <td>{{back.name}}</td>
+        <td>{{back.email}}</td>
+        <td>{{back.gender}}</td>
+        <td>{{back.status}}</td>
+    </tr>
+</table>
+
+
+<form action="" [formGroup]="searchForm">
+    Serach user by Id <input type="text" formControlName="userId">
+ <button type="submit" (click)="searchUser()">Search</button>
+</form>

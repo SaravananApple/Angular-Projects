@@ -1,0 +1,42 @@
+.alert-info{
+    width: 600px;
+    margin-left: 300px;
+}
+img{
+ width: 200px;
+ height: 200px;
+}
+.container{
+    width: 1200px;
+    height: 310px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+.btn-mid{
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+.btn-mid button{
+    width: 150px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+.mid-head{
+    margin-left: 30px;
+
+}
+.vivo{
+    margin-left: 150px;
+}
+.apple{
+    margin-left: 200px;
+}
+.samsung{
+    margin-left: 70px;
+}
+button:active{
+  background-color: darkgreen;
+}
